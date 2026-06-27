@@ -1,0 +1,18 @@
+{
+  "name": "camp-finder-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Data scripts: discover Seattle camps via Google Places, enrich with structured fields.",
+  "scripts": {
+    "discover": "node discover-camps.js",
+    "enrich": "node enrich-camps.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "dotenv": "^16.4.5"
+  }
+}

@@ -1,0 +1,16 @@
+# Netlify build config for the Camp Finder web app.
+# The app lives in the app/ subfolder, so we point Netlify there.
+
+[build]
+  base = "app"                       # run the build inside app/
+  command = "npx expo export -p web" # produces a static site
+  publish = "dist"                   # Expo writes the web build to app/dist
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Single-page app: send all routes to index.html so deep links work.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

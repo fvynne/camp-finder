@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "Camp Finder",
+    "slug": "camp-finder",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0e7490"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.campfinder"
+    },
+    "android": {
+      "package": "com.example.campfinder"
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
