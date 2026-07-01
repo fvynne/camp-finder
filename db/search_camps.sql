@@ -38,6 +38,7 @@ returns table (
 )
 language plpgsql
 stable
+set search_path = public, pg_temp   -- pinned so the function can't be hijacked via search_path
 as $$
 declare
   v_origin geography;
